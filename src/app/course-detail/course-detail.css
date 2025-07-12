@@ -1,0 +1,29 @@
+.course-selected {
+  background-color: #33456C;
+  border-radius: 10px;
+  display: flex;
+}
+.course-info-header{
+    color: #fff;
+    padding: 30px;
+}
+.course-info-content{
+    background-color: #F0F0F0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.course-data-header{
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.course-data-content{
+    background-color: #F0F0F0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+}

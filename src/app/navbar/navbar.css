@@ -1,0 +1,35 @@
+header{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.1);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    margin: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}

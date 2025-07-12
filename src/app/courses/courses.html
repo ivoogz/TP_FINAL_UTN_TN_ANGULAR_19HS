@@ -1,0 +1,27 @@
+<div class="courses-container">
+  <h2>Todos nuestros cursos</h2>
+
+  @if (loading) {
+  <p>Loading...</p>
+  }
+  @else {
+  <div class="cards-container">
+    @for (course of course; track course.id) {
+
+    <a href="/cursos/{{ course.id }}">
+      <div class="card">
+        <div class="card-image">
+          <img src="assets/portadas/{{course.id}}.jpg" alt="{{course.title}}">
+        </div>
+        <div class="card-content">
+          <h3>{{ course.title }}</h3>
+          <p>{{ course.description }}</p>
+        </div>
+      </div>
+    </a>
+
+    }
+  </div>
+
+  }
+</div>

@@ -1,0 +1,47 @@
+@if (courseSelected) {
+<div class="course-selected">
+
+
+    <div class="course-info">
+        <div class="course-info-header">
+            <h1>{{courseSelected.title}}</h1>
+            <p>{{courseSelected.preDescription}}</p>
+        </div>
+
+        <div class="course-info-content">
+            <p>{{courseSelected.description}}</p>
+            <p>{{courseSelected.syllabus}}</p>
+            <p>{{courseSelected.requirements}}</p>
+        </div>
+
+
+    </div>
+
+    <div class="course-data">
+        <div class="course-data-header">
+            <p>Duracion: {{courseSelected.duration}}</p>
+            <p>Dificultad: {{courseSelected.level}}</p>
+        </div>
+
+        <div class="course-data-content">
+            <span>Valor<br>${{courseSelected.price}}</span>
+
+            @if (courseSelected.certificate) {
+            <p>Este curso cuenta con certificado</p>
+            }
+            @else {
+            <p>Este curso no cuenta con certificado</p>
+            }
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+}

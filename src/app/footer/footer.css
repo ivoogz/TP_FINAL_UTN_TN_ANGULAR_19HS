@@ -1,0 +1,18 @@
+footer{
+    background-color: #1F2937;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.redes img{
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+}

@@ -1,0 +1,38 @@
+<div class="opinion-container">
+
+    <h2>Opiniones</h2>
+
+    <div class="opiniones">
+        <!-- @if statment: Sirve para mostrar algo bajo cierta condicion -->
+        @if(opinion.length === 0){
+        <span class="error-text">Aun no hay opiniones, escribe algo!</span>
+        }
+        <!-- @else statment: Sirve para ejecutar algo cuando el @if falle -->
+        @else {
+            @for(opinion of opinion; track opinion.id){
+
+            <div class="opinion">
+                <h3>{{opinion.author}} ha dicho:</h3>
+                <p>{{opinion.opinion}}</p>
+            </div>
+            }
+        }
+    </div>
+
+    <form (submit)="enviarMensaje()">
+        <h2>Deja tu opinion</h2>
+        <div>
+            <label for="author">Ingresa tu nombre:</label>
+            <input id="author" name="author" type="text" [(ngModel)]="form_state.author">
+        </div>
+
+        <div>
+            <label for="opinion">Ingresa tu opinion:</label>
+            <input id="opinion" name="opinion" type="text" [(ngModel)]="form_state.opinion">
+        </div>
+
+        <button type="submit">Enviar Opinion</button>
+
+    </form>
+
+</div>
